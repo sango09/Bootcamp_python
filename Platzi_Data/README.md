@@ -3,7 +3,7 @@
 Development of a professional web scrapper following the workflow of a data engineer
 
 
-course on Platzi.com (https://platzi.com/clases/ingenieria-datos/)
+Course on Platzi.com https://platzi.com/clases/ingenieria-datos/
 
 
 

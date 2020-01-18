@@ -1,0 +1,8 @@
+.ipynb_checkpoints/
+Platzi Data.ipynb
+__pycache__
+*.csv
+jupyter_python.ipynb
+.vscode
+.ipynb_checkpoints
+

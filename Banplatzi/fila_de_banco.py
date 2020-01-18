@@ -16,9 +16,9 @@ def add_row(client_deposit):
     print('Turno | Nombre | Cedula |')
     print('')
     print('{uid_deposit} | {name} | {id} |'.format(
-            uid_deposit=client_deposit['turn'],
-            name=client_deposit['name'],
-            id=client_deposit['id'],))
+        uid_deposit=client_deposit['turn'],
+        name=client_deposit['name'],
+        id=client_deposit['id'],))
     run()
 
 
@@ -26,7 +26,7 @@ def serv_client():
     # Attend bank clients
     if row_account:
         client = row_account.popleft()
-        print('Fila de APERTURA DE CUENTAS: Turno: {} , Cliente: {}'.format(
+        print('Fila de APERTURA DE CUENTAS Turno: {} , Cliente: {}'.format(
             client['turn'], client['name']))
         print('')
         print('El cliente debe ser atendido'.center(50, '='))
@@ -34,7 +34,7 @@ def serv_client():
 
     elif row_deposit:
         client = row_deposit.popleft()
-        print('Fila de DEPOSITO: Turno: {} , Cliente: {}'.format(
+        print('Fila de DEPOSITO Turno: {} , Cliente: {}'.format(
             client['turn'], client['name']))
         print('')
         print('El cliente debe ser atendido'.center(50, '='))
@@ -82,7 +82,7 @@ def _get_client_from_user(pas):
 
 
 def assign_shift(pas):
-    
+    # shift assignment for clients
     if pas == 'd':
         global COUNT_DEP
         COUNT_DEP += 1

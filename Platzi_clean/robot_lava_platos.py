@@ -25,8 +25,7 @@ def wash_dish():
         stack_dishes.pop()
 
         print('El numero de platos que hay para lavar es: {}'.format(
-            str(len(stack_dishes))
-        ))
+            str(len(stack_dishes))))
         print('=' * 80)
     else:
         return break_wash()
@@ -41,8 +40,7 @@ def wash_dish_amount(count):
             stack_dishes.pop()
 
             print('El numero de platos que hay para lavar es: {}'.format(
-                str(len(stack_dishes))
-            ))
+                str(len(stack_dishes))))
             print('=' * 80)
         else:
             return break_wash()
@@ -51,8 +49,7 @@ def wash_dish_amount(count):
 
 def list_dish():
     print('El numero de platos que hay para lavar es: {}'.format(
-        str(len(stack_dishes))
-    ))
+        str(len(stack_dishes))))
     menu()
 
 
@@ -61,8 +58,7 @@ def break_wash():
                         !SE HA ROTO EL LAVADO¡  
                      
                     MUCHAS GRACIAS POR ESCOGERNOS
-                        Tenga un muy buen día
-        ''')
+                        Tenga un muy buen día''')
     print('')
     print('¡ APAGANDO ROBOT !'.center(65))
     print('/(-°-)\ '.center(65))
@@ -91,8 +87,7 @@ def menu():
     elif command == '2':
         while count <= 0:
             count = int(
-                input('Ingresa el numero de platos que deseas agregar: ')
-            )
+                input('Ingresa el numero de platos que deseas agregar: '))
         add_amount(count)
 
     elif command == '3':
@@ -101,8 +96,7 @@ def menu():
     elif command == '4':
         while count <= 0:
             count = int(
-                input('Ingrese el numero de platos que desea lavar: ')
-            )
+                input('Ingrese el numero de platos que desea lavar: '))
         wash_dish_amount(count)
 
     elif command == '5':
@@ -111,8 +105,7 @@ def menu():
     elif command == 'S':
         print('''    
                     MUCHAS GRACIAS POR ESCOGERNOS
-                        Tenga un muy buen día
-        ''')
+                        Tenga un muy buen día''')
         print('')
         print('¡ APAGANDO ROBOT !'.center(70))
         print('/(-°-)\ '.center(70))

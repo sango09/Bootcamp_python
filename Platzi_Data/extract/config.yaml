@@ -1,0 +1,14 @@
+news_sites:
+  elmundo:
+    url: https://www.elmundo.es
+    queries:
+      homepage_article_links: '.ue-c-cover-content__link'
+      article_body : 'article'
+      article_title: 'h1'
+  eltiempo:
+    url: https://www.eltiempo.com
+    queries:
+      homepage_article_links: '.title-container a'
+      article_body : '.articulo-contenido'
+      article_title: '.titulo-principal-bk h1'
+
